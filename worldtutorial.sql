@@ -1,4 +1,13 @@
 --SELECT FROM WORLD TUTORIAL
+/* How the table looks like
+name	continent	area	population	gdp
+Afghanistan	Asia	652230	25500100	20343000000
+Albania	Europe	28748	2831741	12960000000
+Algeria	Africa	2381741	37100000	188681000000
+Andorra	Europe	468	78115	3712000000
+Angola	Africa	1246700	20609294	100990000000
+*/
+
 --1-Observe the result of running this SQL command to show the name, continent and population of all countries.
 
 SELECT name, continent, population FROM world;
@@ -42,3 +51,5 @@ SELECT name, capital FROM world WHERE LEFT(name,1)=LEFT(capital,1) AND  STRCMP(n
 
 -- 13- Find the country that has all the vowels and no spaces in its name.
 SELECT name FROM world WHERE name LIKE '%a%' AND name LIKE '%e%' AND name LIKE '%i%' AND name LIKE '%o%' and name LIKE  '%u%' AND name NOT LIKE '% %';
+
+
